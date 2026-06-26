@@ -1,0 +1,4 @@
+To chose a strategy at runtime, we can use the Strategy design pattern.
+The Strategy pattern allows us to define a family of algorithms,
+encapsulate each one, and make them interchangeable. This enables the
+algorithm to vary independently from clients that use it.

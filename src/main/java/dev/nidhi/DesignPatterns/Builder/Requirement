@@ -1,0 +1,10 @@
+We have a requirement to create a complex user object with multiple optional parameters
+Option 1: Have a huge constructor, with all the parameters, it can be confusing and hard to read
+Option 2: Constructor Overloading, will lead to constructor explosion
+Option 3: Use the builder design pattern, builder creates the object
+
+    Way 1: User class' constructor will be private, then builder can't access it
+    Way 2: Make setters, then everyone can access the setters
+    Way 3: Make builder an inner static class, then builder can access the private data members of
+           user class, and no one else can access the private data members of user class
+
