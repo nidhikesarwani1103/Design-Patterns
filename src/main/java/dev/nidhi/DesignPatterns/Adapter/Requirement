@@ -1,0 +1,7 @@
+
+
+We have a paymentGateway that has a pay method, which takes ammount in int.
+WE get an SDK, RayzorPaySDK, that makes payment in double.
+We can't change either of the classes. We need to write something that understands both
+of them.
+
