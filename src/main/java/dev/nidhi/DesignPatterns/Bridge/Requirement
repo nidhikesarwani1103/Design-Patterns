@@ -1,0 +1,9 @@
+
+We have notifications and priority, these are getting multiplied and leading to
+class explosion. To avoid this, we can use the Bridge design pattern to separate
+the notification types from the priority levels. This way, we can create a more
+ flexible and maintainable system.
+ We create notification types (e.g., EmailNotification, SMSNotification) and
+ priority levels (e.g., HighPriority, LowPriority) as separate classes. The
+  notification classes will have a reference to the priority level, allowing us
+to mix and match them without creating a new class for every combination.

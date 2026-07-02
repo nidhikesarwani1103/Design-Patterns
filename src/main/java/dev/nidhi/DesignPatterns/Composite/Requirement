@@ -1,0 +1,5 @@
+We have a menu. That contains multiple items.
+Like burger, coke, fries.
+Then we Combo meals like, lunchCombo, DinnerCombo
+Then we have FestivalCombo, that can contain Items and Combos both.
+We have to get price or any such details from the menu.
