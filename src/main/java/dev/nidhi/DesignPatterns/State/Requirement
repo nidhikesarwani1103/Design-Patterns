@@ -1,0 +1,36 @@
+We have three states
+CREATED
+    ↓
+PAID
+    ↓
+DELIVERED
+
+We want to perform operations based on these states and set teh state for further tasks
+Using huge if-else is not good.
+We are trying to create the states as classes so the states are aware wah actions can be
+performed and which can not.
+
+
+                    +------------------+
+                    |   OrderState     |  <<interface>>
+                    +------------------+
+                    | +pay(Order)      |
+                    | +deliver(Order)  |
+                    | +cancel(Order)   |
+                    +------------------+
+                            ▲
+          ------------------------------------------
+          |                    |                  |
+          |                    |                  |
++----------------+   +----------------+   +------------------+
+| CreatedState   |   | PaidState      |   | DeliveredState   |
++----------------+   +----------------+   +------------------+
+
+                    uses
+                      ▲
+                      |
+               +--------------+
+               |    Order     |   (Context)
+               +--------------+
+               | OrderState   |
+               +--------------+

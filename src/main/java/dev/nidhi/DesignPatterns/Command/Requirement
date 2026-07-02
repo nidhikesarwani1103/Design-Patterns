@@ -1,0 +1,3 @@
+The FoodDeliveryService can have multiple functions to call. We have a Button that has to
+Perform these actions. Now if button takes all these decisions, it violates SRP, OCP and
+DIP. Button's job should be performing action not choosing.
